@@ -7,6 +7,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+// assignment 2
+
 public class WordCounting {
     public static void main(String[] args) throws IOException {
 
