@@ -47,7 +47,7 @@ public class WordCounting {
         // inserting every word into the dictionary
         for (String word: allWords) {
 
-            // checking if a number or if a word is "trivial" 
+            // checking if a number is encountered, or if a word is "trivial" 
             if (digits.contains(Character.getNumericValue(word.charAt(0))) || word.length() <= 3) {
                 continue;
             }
