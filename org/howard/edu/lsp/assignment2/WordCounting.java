@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+// Julian Matthews
 // assignment 2
 
 public class WordCounting {
