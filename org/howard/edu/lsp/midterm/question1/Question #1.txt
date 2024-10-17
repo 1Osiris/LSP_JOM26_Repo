@@ -6,6 +6,6 @@ Question #1
 
     b) to make a more cohesive deign I would create a UserProfile class, a WorkoutTracker class,
     a Nutrition tracker class, and a FintessReport Class. This allows for all the classes to
-    individually complete a specific task. this also allows for aspects to be evolved independently
+    individually complete a specific task. this also also allows for aspects to be evolved independently
     from eachother. for example if the WorkoutTracker class needed to be updated, the other classes
     would remain unbothered.
