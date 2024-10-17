@@ -1,0 +1,66 @@
+Question #1 
+    a) the UserFitness has low cohesion because it handles a lot of seemingly unrelated attributes.
+    for example, it combines user profile data with nutrition tracking & workout tracking. the methods
+    in the class are also very varried and do not aim twards a singular purpose. The class design is 
+    overall inflexibale, not resuable, and serves a very narrow purpouse.
+
+    b) to make a more cohesive deign I would create a UserProfile class, a WorkoutTracker class,
+    a Nutrition tracker class, and a FintessReport Class. This allows for all the classes to
+    individually complete a specific task. this also allows for aspects to be evolved independently
+    from eachother. for example if the WorkoutTracker class needed to be updated, the other classes
+    would remain unbothered.
+
+Question #2
+    a) The Stundent class should be an abstract class because there are things that are shared
+    amung all students of each classification. for example a student ID number, or a method 
+    for calculating the GPA for a student. Also if you want to store all the students in a list,
+    then an abstract class must be implemented so one could take advanatge of polymorphism.
+
+    b) this method is flawed because we are not letting the object do something for us.
+    This way of implimentation could lead to errors when maybe expanding to non, 3rd year 
+    students. also, what if the 3rd year student needs to take another year for school.
+    it would be better to have an attribute of 3rd year students tell us if they are about to graduate. 
+
+Question #3
+    a) The Bank Account class is not the best example of encapsulation beacuse of how easily attributes
+    are able to be acsessed. accountHolderName, accountNumber, balance, interestRate should be private &
+    addInterest(), deposit(), and withdraw() should only be able to be privatley acseessed through internal
+    methods or internal classes.
+
+Question #4
+    a) The UML diagram uses inheritance for trim levels, making it inflexible and unable to support 
+    dynamic changes because one a car is made, its trim level is final.
+
+    b) to fix this, there should be a trim level interface that has subclasses of all the avalible
+    trim levels. There should also be attributes of the Car class that tracks it's trim level and
+    its engine. there should also be a method in the car class that allows one to chnage the trim level
+
+Question #5
+    a) This can lead to a problem due to many reasons. First Code duplication: Having similar code in multiple 
+    places violates Riel's heuristic "Keep related data and behavior in one place". Scond, the Open-Closed Principle:
+    If changes are needed, both classes might require modification, going against "A class should be open for 
+    extension but closed for modification". this can be fixed by using abstract classes.
+    "Abstract classes should be used to model the commonality between classes". i.e Extract the common code into 
+    an abstract base class, with the differing parts implemented in subclasses or as abstract methods.
+
+Questions #6
+    a) this is unwise because it violates the single responsability prinicple. this leads to high
+    coupling between the database tech and the domain objects. this reduces flexability & resuability.
+
+Question #7
+    a) To create a new class hierarchy using inheritance, there should be a "is-a" relationship
+    between subclasses and the superclass. there should also be a lot of shared attributes and methods
+    among the subclasses
+
+Question #8
+    a) Inheritance represents an "is-a" relationship where a subclass inherits from a superclass, 
+    while composition represents a "has-a" relationship where one class contains objects of another.
+    Use inheretence when creating a specific instance of a class. use composition when a class has 
+    another class as an attribute.
+
+Question #9
+    a) cohesion represents how elements withing a class work twards a single defined purpose.
+    high cohesion leads to easy maintainability and  high reusability. Low cohesion leads to 
+    classes with multiple, unrelated responsibilities, making the code harder to maintain, 
+    understand, and scale.
+    
