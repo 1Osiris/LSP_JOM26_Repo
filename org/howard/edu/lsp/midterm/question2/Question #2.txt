@@ -1,0 +1,10 @@
+Question #2
+    a) The Stundent class should be an abstract class because there are things that are shared
+    amung all students of each classification. for example a student ID number, or a method 
+    for calculating the GPA for a student. Also if you want to store all the students in a list,
+    then an abstract class must be implemented so one could take advanatge of polymorphism.
+
+    b) this method is flawed because we are not letting the object do something for us.
+    This way of implimentation could lead to errors when maybe expanding to non, 3rd year 
+    students. also, what if the 3rd year student needs to take another year for school.
+    it would be better to have an attribute of 3rd year students tell us if they are about to graduate. 
