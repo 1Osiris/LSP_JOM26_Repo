@@ -1,5 +1,3 @@
-package Q3;
-
 public class VotingDriver {
     public static void main(String[] args) {
         VotingMachine vm = new VotingMachine();
