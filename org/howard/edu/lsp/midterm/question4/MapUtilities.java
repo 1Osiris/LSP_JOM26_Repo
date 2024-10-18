@@ -1,5 +1,3 @@
-package Q4;
-
 import java.util.HashMap;
 
 public class MapUtilities {
