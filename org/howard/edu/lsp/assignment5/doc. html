@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IntegerSet Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #333;
+        }
+        
+        .method {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+        
+        code {
+            background-color: #eee;
+            padding: 2px 5px;
+            font-family: monospace;
+        }
+        
+        .example {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border-left: 3px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>IntegerSet Class Documentation</h1>
+    
+    <p>
+        A class that represents a set of integers. Each number can appear only once in the set.
+    </p>
+
+    <h2>How to Create a Set</h2>
+    
+    <div class="method">
+        <h3>Create an empty set:</h3>
+        <div class="example">
+            <code>IntegerSet set = new IntegerSet();</code>
+        </div>
+
+        <h3>Create a set with numbers:</h3>
+        <div class="example">
+            <code>
+                ArrayList&lt;Integer&gt; numbers = new ArrayList&lt;&gt;();<br>
+                numbers.add(1);<br>
+                numbers.add(2);<br>
+                numbers.add(3);<br>
+                IntegerSet set = new IntegerSet(numbers);
+            </code>
+        </div>
+    </div>
+
+    <h2>Basic Operations</h2>
+
+    <div class="method">
+        <h3>Add a number:</h3>
+        <div class="example">
+            <code>set.add(5);</code>
+        </div>
+
+        <h3>Remove a number:</h3>
+        <div class="example">
+            <code>set.remove(5);</code>
+        </div>
+
+        <h3>Check if empty:</h3>
+        <div class="example">
+            <code>boolean empty = set.isEmpty();</code>
+        </div>
+
+        <h3>Get size of set:</h3>
+        <div class="example">
+            <code>int size = set.length();</code>
+        </div>
+
+        <h3>Clear all numbers:</h3>
+        <div class="example">
+            <code>set.clear();</code>
+        </div>
+    </div>
+
+    <h2>Finding Values</h2>
+
+    <div class="method">
+        <h3>Find largest number:</h3>
+        <div class="example">
+            <code>int max = set.largest();</code>
+        </div>
+
+        <h3>Find smallest number:</h3>
+        <div class="example">
+            <code>int min = set.smallest();</code>
+        </div>
+
+        <h3>Check if a number exists:</h3>
+        <div class="example">
+            <code>boolean hasNumber = set.contains(5);</code>
+        </div>
+    </div>
+
+    <h2>Set Operations</h2>
+
+    <div class="method">
+        <h3>Union (Combine two sets):</h3>
+        <div class="example">
+            <code>
+                // Adds all numbers from setB to setA<br>
+                setA.union(setB);
+            </code>
+        </div>
+
+        <h3>Intersection (Find common numbers):</h3>
+        <div class="example">
+            <code>
+                // Keeps only numbers that are in both sets<br>
+                setA.intersect(setB);
+            </code>
+        </div>
+
+        <h3>Difference (Remove numbers):</h3>
+        <div class="example">
+            <code>
+                // Removes numbers that are in setB from setA<br>
+                setA.diff(setB);
+            </code>
+        </div>
+    </div>
+
+    <h2>Print the Set</h2>
+
+    <div class="method">
+        <h3>Convert to string:</h3>
+        <div class="example">
+            <code>
+                IntegerSet set = new IntegerSet();<br>
+                set.add(1);<br>
+                set.add(2);<br>
+                System.out.println(set); // Prints: [1, 2]
+            </code>
+        </div>
+    </div>
+
+</body>
+</html>
